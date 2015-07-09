@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Twitch Browser</title>
+	<script src="background.js"></script>
+  </head>
+  <body>
+  <h1> Search Streams </h1>
+	<div id="streamContent">
+		<table>
+		<tr>
+		<td>
+			<form>
+				<input type="text" name="streamerValue" id="streamer" value="Enter Text Here">
+			</form>
+		</td>
+		<td>
+			<button id="newStream">Search </button>
+		</td>
+		</tr>
+		</table>
+		<div id="streamVideo">
+			<iframe id="player" type="text/html" width="350" height="220" src="http://www.twitch.tv/rockerboo/embed" frameborder="0"></iframe>
+		</div>
+		
+		<div id="streamChat">
+			<iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/rockerboo/chat" height="500" width="350"></iframe>
+		</div>
+	</div>
+  </body>
+</html>
